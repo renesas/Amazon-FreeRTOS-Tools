@@ -8,15 +8,15 @@ We can use it as GUI and CUI mode. We recommend to use the CUI mode because of i
 
 1. Create userprog.mot file
 
-"path to Renesas Secure Flash Programmer.exe" CUI Initial "RX65N(ROM 2MB)/Secure Bootloader=256KB" "sig-sha256-ecdsa" 1 "path to boot_loader.mot" "path to aws_demos.mot" "path to secp256r1.privatekey" "path to create userprog.mot"
+"path_to_Renesas Secure Flash Programmer.exe" CUI Initial "RX65N(ROM 2MB)/Secure Bootloader=256KB" "sig-sha256-ecdsa" 1 "path_to_boot_loader.mot" "path_to_aws_demos.mot" "path_to_ secp256r1.privatekey" "path_to_userprog.mot"
 
 2. Create userprog.rsu file
 
-"path to Renesas Secure Flash Programmer.exe" CUI Update "RX65N(ROM 2MB)/Secure Bootloader=256KB" "sig-sha256-ecdsa" 1 "path to aws_demos.mot" "path to create userprog.rsu"
+"path_to_Renesas Secure Flash Programmer.exe" CUI Update "RX65N(ROM 2MB)/Secure Bootloader=256KB" "sig-sha256-ecdsa" 1 "path_to aws_demos.mot" "path_to_userprog.rsu"
 
 
 The steps to set the build.bat for IDT tests.
 
-1. path to eclipsec.exe -nosplash -debug -consolelog -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data path to \devicetester_freertos_win\builddemos -import path to aws_demos -cleanBuild all
+1. path_to_eclipsec.exe -nosplash -debug -consolelog -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data path_to_\devicetester_freertos_win\builddemos -import path_to_aws_demos -cleanBuild all
 2. Create userprog.mot file
 3. Create userprog.rsu file
