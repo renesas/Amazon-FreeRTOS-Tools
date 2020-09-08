@@ -3,6 +3,7 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
+import os
 import argparse
 
 
@@ -14,11 +15,16 @@ args = parser.parse_args()
 config_file			= str(args.path_aws) + '//amazon-freertos//vendors//renesas//boards//rx65n-rsk//aws_demos//config_files//aws_demo_config.h'
 cproject_file       = str(args.path_aws) +  '//amazon-freertos//projects//renesas//rx65n-rsk//e2studio//aws_demos//.cproject'
 
+is_config_file = os.path.isfile(config_file)
+
+if is_config_file is False:
+    config_file = str(args.path_aws) + '//amazon-freertos//vendors//renesas//rx_mcu_boards//boards//rx65n-rsk//aws_demos//config_files//aws_demo_config.h'
+
 """Read aws_demo_config.h """
 read_config_file = open(config_file, "r")
 new_config_file = ""
 for line in read_config_file:
-    new_line = line.strip().replace("#define CONFIG_MQTT_DEMO_ENABLED", "#define CONFIG_OTA_UPDATE_DEMO_ENABLED")
+    new_line = line.strip().replace("CONFIG_MQTT_DEMO_ENABLED", "CONFIG_OTA_UPDATE_DEMO_ENABLED")
     new_config_file += new_line +"\n"
 read_config_file.close()
 
