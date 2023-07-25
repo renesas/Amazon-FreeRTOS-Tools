@@ -2,7 +2,7 @@
 
 
 # Note
-Please download tool to use with the following OS version and repo https://github.com/renesas/amazon-freertos/releases
+Please download tool to use with the matching OS version and repo https://github.com/renesas/amazon-freertos/releases
 
 # Amazon-FreeRTOS-Tools
 
