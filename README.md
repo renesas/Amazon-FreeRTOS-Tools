@@ -1,3 +1,6 @@
+# Note
+Please download tool to use with the following OS version and repo https://github.com/renesas/amazon-freertos/releases
+
 # Amazon-FreeRTOS-Tools
 
 Tools to convert userprog.mot file to userprog.rsu file and create the combination of boot_loader.mot and aws_demos.mot to be userprog.mot.
@@ -23,20 +26,3 @@ The steps to set the build.bat for IDT tests.
 2. path_to_eclipsec.exe -nosplash -debug -consolelog -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data path_to_\devicetester_freertos_win\builddemos -import path_to_aws_demos -cleanBuild all
 3. Create userprog.mot file
 4. Create userprog.rsu file
-
-# Download and usage 
-- Please download tool to use with the following OS version and repo
-  
-Renesas repo : https://github.com/renesas/amazon-freertos
-
-Amazon repo : https://github.com/aws/amazon-freertos
-
- Repo | OS version|
-| :----- | :---: |
-| Renesas |v202002.00-rx-1.0.0|
-| Renesas | v202002.00-rx-1.0.1|
-| Renesas | v202002.00-rx-1.0.2|
-| Amazon | 202012|
-| Amazon | 202107|
-
-- Don't use folder v2 for any OS version
