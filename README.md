@@ -1,3 +1,6 @@
+⛔️ DEPRECATED
+
+
 # Note
 Please download tool to use with the following OS version and repo https://github.com/renesas/amazon-freertos/releases
 
