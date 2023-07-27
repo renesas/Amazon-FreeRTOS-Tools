@@ -8,6 +8,8 @@ Please download tool to use with the matching OS version on Renesas repository.
 
 https://github.com/renesas/amazon-freertos/releases
 
+![image](https://github.com/renesas/Amazon-FreeRTOS-Tools/assets/52021577/08de092b-ba89-4fb5-ba55-75f57ab1d590)
+
 # Amazon-FreeRTOS-Tools
 
 Tools to convert userprog.mot file to userprog.rsu file and create the combination of boot_loader.mot and aws_demos.mot to be userprog.mot.
