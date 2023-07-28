@@ -4,7 +4,7 @@
 # Note
 Do not use tool from this repository.
 
-Please download tool to use with the matching OS version on Renesas repository. 
+Please download tool (Renesas Secure Flash Programmer.exe) to use with the matching OS version on Renesas repository.
 
 https://github.com/renesas/amazon-freertos/releases
 
